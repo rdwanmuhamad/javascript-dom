@@ -21,5 +21,3 @@ p4.addEventListener("click", function () {
   li.appendChild(teksLi);
   ul.appendChild(li);
 });
-
-

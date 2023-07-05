@@ -82,11 +82,11 @@ function loader() {
   let i = 0;
   const mulai = new Date().getTime();
   setInterval(function () {
-    if (new Date().getTime - mulai > 100) {
+    if (new Date().getTime() - mulai > 100) {
       clearInterval;
       return;
     }
-    imgCompter.setAttribute("src", gambar[i++] + ".png");
+    imgCompter.setAttribute("src", "img/" + gambar[i++] + ".png");
     if (i == gambar.length) i = 0;
   }, 100);
 }
@@ -105,7 +105,7 @@ pilihan.forEach(function (pil) {
 
     setTimeout(function () {
       const imgComputer = document.querySelector(".img-komputer");
-      imgComputer.setAttribute("src", pilihanComputer + ".png");
+      imgComputer.setAttribute("src", "img/"+ pilihanComputer + ".png");
 
       const info = document.querySelector(".info");
       info.innerHTML = hasil;
